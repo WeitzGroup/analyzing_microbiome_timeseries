@@ -5,13 +5,29 @@ _Setting up your working environment_
 
 There are two ways to run the provided code, first is using **jupyter notebooks with R** or open the provided code in **RStudio**. An example of how to run RStudio and jupyter notebooks using conda environments can be found [here](https://alexanderlabwhoi.github.io/post/anaconda-r-sarah/).  
 
-Another reason we recommend running this tutorial in a conda environment, is to streamline the R package installations.
+### jupyter notebooks
 
-### Here are the R packages that need to be installed ahead of time:
+Activate an R conda environment, migrate to this repo, and start jupyter notebooks to run ```clustering_tutorial.ipynb```. To run$
 
+```
+# Example
+conda activate r_3.5.1
+
+cd ../../../analyzing_microbiome_timeseries/module_clustering/
+
+jupyter notebook
+# Open clustering_tutorial.ipynb
+```
+
+### R command line or RStudio
+Open terminal and active R or start RStudio to run ```clustering_tutorial.r```.
+
+## Section 2: R package installation
+
+Here are the R packages that need to be installed ahead of time:
 > reshape2 , vegan , dplyr, ade4 , plotly, compositions , pracma , DESeq2 , fpc , tidyverse, purrr, cluster, RColorBrewer, ape
 
-To install using conda most packages are already available in the r-essentials package
+To install using conda most packages are already available in the r-essentials package. *Using conda environments is also recommended, as R package installations may be easier than installing directly in RStudio or on the command line.
 ```
 conda install -c r r-essentials
 ```
@@ -31,15 +47,12 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
 
 BiocManager::install("DESeq2")
 ```
-* Here is how to load a conda environment/how to install conda
-* Here is how to install an R package via conda-install bioconductor [link_to_bioconductor_bioconda_website] 
-* Here are the packages you need
 
-# Section 2: Running the code
-* Here is how to use jupyter notebooks
+
+## Section 3: Running the code
+
+Once your R environment is set up you can begin running the tutorial. The tutorial includes comments that parallel the primer. The included test data are from [Hu et al. 2018](https://www.frontiersin.org/articles/10.3389/fmars.2018.00351/full) additional information can be found [here](https://github.com/shu251/18Sdiversity_diel).
+
 
 
 If you have questions please feel free to reach the authors at the contact provided in the main README
-# Other packages can be installed using bioconductor
-# Other packages can be installed using bioconductor
-# Other packages can be installed using bioconductor
