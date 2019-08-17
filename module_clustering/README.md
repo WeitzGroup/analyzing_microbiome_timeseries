@@ -1,5 +1,5 @@
-# Introduction for running module on Statistical Ordination and Clustering
-
+## Introduction for running module on Statistical Ordination and Clustering
+***
 ## Section 1: Getting started
 _Setting up your working environment_ 
 
@@ -7,7 +7,7 @@ There are two ways to run the provided code, first is using **jupyter notebooks 
 
 ### jupyter notebooks
 
-Activate an R conda environment, migrate to this repo, and start jupyter notebooks to run ```clustering_tutorial.ipynb```. To run$
+Activate an R conda environment, migrate to this repo, and start jupyter notebooks to run ```clustering_tutorial.ipynb```.
 
 ```
 # Example
@@ -98,5 +98,7 @@ This data is an OTU table with taxonomy, where each row is an OTU and columns ar
 11. Generate a Silhouette profile to evaluate clustering approach
    - Dissect clustered data by taxonomic identity
    - Demonstrate medoid dynamics for each cluster
+
+***
 
 If you have questions please feel free to reach the authors at the contact provided in the main README
