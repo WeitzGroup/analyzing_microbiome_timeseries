@@ -1,5 +1,4 @@
-## Introduction for running module on Statistical Ordination and Clustering
-***
+# Introduction for running module on Statistical Ordination and Clustering
 ## Section 1: Getting started
 _Setting up your working environment_ 
 
