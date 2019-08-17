@@ -1,4 +1,4 @@
-# Introduction for running module on Statistical Ordination and Clustering
+# Introduction for running module on Periodicity
 ## Section 1: Getting started
 _Setting up your working environment_ 
 
@@ -63,7 +63,24 @@ This data is an OTU table with taxonomy, where each row is an OTU and columns ar
    - Remove global singletons
    - Filter out unwanted OTUs
    - Generate a separate taxonomy dataframe so we can work with all numeric data
-
+2. Perform Center Log-ratio transformation of data
+   - Perform detrending step
+   - Set up RAIN parameters specific to time-series sample frequency
+3. Perform RAIN analysis
+   - Examine distribution of p-value results
+   - Subset significant p-values (p<0.05)
+4. Assess signifiance - 3 flavors
+   - Bonferroni correction
+   - Benjamini-Hochberg correction
+   - Adaptive Benjamini-Hochberg correction
+   - Identify p-values smaller than those expeted at 5% False Discovery Rate
+   - Plot p-values by p-value rank
+5. Estimate the number of false null hypotheses
+   - Plot p-values by p-value rank
+6. Subset significant p-values based on 5% FDR
+   - Compile with taxonomic identities
+   - Join CLR normalized data with this list
+   - Plot CLR trend over time of those OTUs found to have significant periodicity
 ***
 
 If you have questions please feel free to reach the authors at the contact provided in the main README
