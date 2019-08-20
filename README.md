@@ -9,7 +9,7 @@ Time-series can provide critical insights into the structure and function of mic
 Note that these tutorials are meant to serve as a primer that includes the basics of how to approach statistical ordination, clustering, autoregression and regression, and nonparametric periodic signals in high-resolution temporal data.  
 
 #### **Tutorials**
-* Introduction (**matlab, Octave**)
+* Introduction (**MATLAB, Octave**) - demonstrates how autocorrelation within timeseries leads to spurious correlations between independent variables
 * Clustering (**R**) - uses a test dataset to explore normalization of compositional data, diagnostic tools to ensure ordination approaches are appropriate, and ordination methods including NMDS and PCoA
 * Periodicity (**R**) - with a test dataset, demonstrates normalization of compositional data and how to pull out periodic signals 
-* Regression (**matlab, Octave**)
+* Regression (**MATLAB, Octave**) - with simulated data, demonstrates how to estimate autoregressive coefficients, perform linear regression and linear regression with regularization; applies these principles to a test dataset (MATLAB only)
