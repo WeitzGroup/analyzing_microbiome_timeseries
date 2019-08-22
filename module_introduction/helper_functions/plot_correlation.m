@@ -7,13 +7,13 @@ sig = 0.05; % significance threshold
 [sigy, sigx] = find(pval<sig);
 
 % colormap
-load('redbluecmap','redbluecmap');
+load('helper_functions/redbluecmap');
 
 N = size(rho,1);
 
 imagesc(rho,[-1 +1]);
 colormap(gca,flip(redbluecmap));
-colorbar();
+cbar = colorbar();
 hold on
 plot(sigx,sigy,'k*','MarkerSize',4);
 hold off;
