@@ -4,10 +4,19 @@
 mode_flag = 0; % area plots
 %mode_flag = 1; % bar plots
 
+page_flag = 0; % full page figure
+%page_flag = 1; % half page figure
+
 tmpdir = dir('data_mat/ts*');
 fig = figure();
-nrow = 2;
-ncol = 4;
+
+if page_flag==0
+    nrow = 4;
+    ncol = 2;
+elseif page_flag==1
+    nrow = 2;
+    ncol = 4;
+end
 
 
 for k = 1:length(tmpdir)
@@ -48,6 +57,10 @@ end
 %clear k tmp*;
 
 % print
-fig.Position(3:4) = fig.Position(3:4).*[3 1.5];
+if page_flag==0
+    fig.Position(3:4) = fig.Position(3:4).*[1.75 5];
+elseif page_flag==1
+    fig.Position(3:4) = fig.Position(3:4).*[3 1.5];
+end
 print('figures/timeseries/summary','-dpng');
 print_manuscript_fig('aloha1');

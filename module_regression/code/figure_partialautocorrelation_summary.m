@@ -20,6 +20,7 @@ for depthID = 1:length(tmpdir)
 end
 fig.Position(3) = fig.Position(3)*1.75;
 print('figures/partialautocorrelation/summary_value','-dpng');
+label_figure('B)');
 print_manuscript_fig('aloha2b');
 
 % how many contigs show autocorrelation? (by depth)
@@ -38,6 +39,7 @@ for depthID = 1:length(tmpdir)
 end
 fig.Position(3) = fig.Position(3)*1.75;
 print('figures/partialautocorrelation/summary_fraction','-dpng');
+label_figure('A)');
 print_manuscript_fig('aloha2a');
 
 % omit pacs>1 and pacs<thresh

@@ -17,6 +17,8 @@ interpolatenans; % interpolate for missing values (use caution!)
 figure_timeseries;
 figure_timeseries_summary;
 
+fprintf('PART 1 COMPLETE\n\n');
+
 
 %% PART 2 - PARTIAL AUTOCORRELATION & AUTOREGRESSION
 
@@ -30,6 +32,8 @@ autoregression;
 figure_autoregression;
 figure_autoregression_summary;
 
+fprintf('PART 2 COMPLETE\n\n');
+
 
 %% PART 3 - REGRESSION
 
@@ -37,3 +41,5 @@ figure_autoregression_summary;
 regression;
 figure_regression;
 figure_regression_summary;
+
+fprintf('PART 3 COMPLETE\n\n');

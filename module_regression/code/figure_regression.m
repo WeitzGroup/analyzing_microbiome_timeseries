@@ -14,7 +14,7 @@ for depthID = 1:length(tmpdir)
         subplot(nrow,ncol,k);
         tmpim = imagesc(beta{k},[-1 +1]);
         tmpim.AlphaData = abs(beta{k})>betafrac_thresh; % zero interactions
-        colormap(flip(redbluecmap()));
+        colormap(flip(redblue()));
         colorbar();
         set(gca,'XTickLabel',[],'YTickLabel',[]);
         title(beta_label{k});
