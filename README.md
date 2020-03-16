@@ -12,5 +12,4 @@ These tutorials are meant to serve as a primer that includes the basics of how t
 * Introduction (**MATLAB, Octave**) - demonstrates how autocorrelation within timeseries leads to spurious correlations between independent variables
 * Clustering (**R**) - uses a test dataset to explore normalization of compositional data, diagnostic tools to ensure ordination approaches are appropriate, and ordination methods including NMDS and PCoA
 * Periodicity (**R**) - with a test dataset, demonstrates normalization of compositional data and how to pull out periodic signals 
-* Regression (**MATLAB, Octave**) - with simulated data, demonstrates how to estimate autoregressive coefficients, perform linear regression and linear regression with regularization; applies these principles to a test dataset (MATLAB only)
 * Inference (**MATLAB**) - with simulated data, demonstrates how to perform model-based network inference to estimate the infection network in a microbe-virus community
